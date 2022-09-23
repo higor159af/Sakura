@@ -1,0 +1,268 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  background: url(img/sakura2.jpg) no-repeat left top fixed;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  text-align: justify;
+}
+
+.clear {
+  clear: both;
+}
+
+#cabecalho,
+.corpo,
+#rodape {
+  border-radius: 10px;
+  margin: 0 auto;
+  max-width: 1200px;
+  min-width: 400px;
+  padding: 5px 10px;
+}
+
+.corpo,
+#rodape {
+  margin: 15px auto;
+  background-color: rgba(240, 248, 255, 0.281);
+}
+
+#cabecalho {
+  background-color: rgba(240, 248, 255, 0.849);
+  text-align: center;
+}
+
+#cabecalho .logo {
+  width: 300px;
+}
+
+.navegacao {
+  float: right;
+  margin-top: 20px;
+}
+
+.menu li, .redes li {
+  display: inline;
+  padding: 5px;
+  margin: 0 5px;
+}
+.menu li a {
+  color: #ff00f2;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  color: #fd8df8;
+  text-decoration: underline;
+}
+
+.redes {
+  margin-top: 20px;
+}
+
+.redes li a{
+  padding: 5px;
+  font-size: 1.2rem;
+  color: #f812ed;
+}
+
+/* hamburguer */
+
+.hamburguer {
+  float: right;
+  display: none;
+  cursor: pointer;
+  z-index: 2;
+  padding: 5px;
+  position: fixed;
+  right: 0px;
+}
+
+.linha {
+  background: #f812ed;
+  width: 22px;
+  height: 2px;
+  margin: 7px;
+  border-radius: 10%;
+}
+
+/* imagens */
+.imagem {
+  width: 400px;
+  float: right;
+  margin: auto;
+  border: #fd8df8 6px solid;
+  transition: all 1s ease-out;
+  opacity: 0.6;
+}
+
+.imagem:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+/* corpo */
+.container {
+  display: flex;
+  padding: 0 10px;
+}
+
+.row {
+  width: 650px;
+  padding: 15px;
+}
+
+.row h1,.corpo h1 {
+  padding: 5px;
+  margin-bottom: 15px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  font-size: 1.9rem;
+  color: #f812ed;
+}
+.row p {
+  font-size: 1.2rem;
+  padding: 5px;
+  margin-top: 15px;
+  line-height: 30px;
+}
+
+.referencia{
+  float: left;
+  font-size: 0.7rem;
+  position: relative;
+  margin-left: 30px;
+}
+.referencia a{
+  color: #f812ed;
+}
+
+/* formulario */
+
+
+.corpo form{
+  background: #ffccfc;
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 2px 2px 3px #f812ed;
+}
+
+.corpo input{
+  text-align: right;
+  padding: 5px 10px;
+  padding-left: 50px;
+  width: 200px;
+  height: 30px;
+  border: none;
+  box-shadow: 2px 2px 3px #f812ed;
+  margin:  15px 5px;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  color: #f812ed;
+}
+
+.corpo input::placeholder{
+  font-size: 1.1rem;
+  border: none;
+  color: #f812ed;
+}
+
+
+.corpo label{
+  position: relative;
+  left: -90px;
+  top: 10px;
+  font-size: 0.9rem;
+  margin: 15px 5px;
+  padding: 5px;
+}
+
+.corpo button{
+  width: 200px;
+  font-size: 1.1rem;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #f812ed;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.corpo {
+  text-align: center;
+}
+
+
+@media (max-width: 500px) {
+  #cabecalho .logo {
+    width: 200px;
+    float: left;
+  }
+  .navegacao {
+    background: #ffe8fefa;
+    height: 100%;
+    overflow-x: hidden;
+    position: fixed;
+    right: 0;
+    top: -15px;
+    width: 0%;
+    transition: all 0.5s;
+    z-index: 1;
+  }
+
+  .menu li {
+    display: block;
+    padding: 10px 2px;
+    margin-top: 60px;
+  }
+
+  .redes li{
+    display: block;
+    margin-top: 10px;
+  }
+
+  .menu li a {
+    letter-spacing: 2px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .redes li a{
+    transition: all 1s;
+  }
+
+  .hamburguer {
+    display: block;
+  }
+
+}
+
+@media (max-width: 900px) {
+  .imagem{
+    display: none;
+  }
+  
+  .row{
+    width: 100%;
+  }
+
+}
