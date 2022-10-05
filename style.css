@@ -213,6 +213,11 @@ p {
 }
 
 
+/* rodape */
+#rodape{
+  text-align: center;
+}
+
 @media (max-width: 500px) {
   #cabecalho .logo {
     width: 200px;
